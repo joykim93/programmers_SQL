@@ -1,0 +1,9 @@
+## 모든 레코드 조회하기
+## 문제 url: https://programmers.co.kr/learn/courses/30/lessons/59034
+## 간략한 문제 요구사항
+
+## 동물 보호소에 들어온 모든 동물의 정보가 담긴 ANIMAL_INS 테이블
+## ANIMAL_INS 테이블에 담긴 데이터를 ANIMAL_ID순으로(오름차순) 조회하는 SQL문을 작성하시오
+
+## 나의 SQL 쿼리
+SELECT *FROM ANIMAL_INS ORDER BY ANIMAL_ID
