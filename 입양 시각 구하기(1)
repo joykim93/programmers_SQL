@@ -1,0 +1,14 @@
+## 입양 시각 구하기(1)
+## 문제 url: https://programmers.co.kr/learn/courses/30/lessons/59412
+## 간략한 문제 요구사항
+
+## 동물 보호소에 입양을 보낸 모든 동물의 정보가 담긴 ANIMAL_OUTS 테이블
+## 09:00부터 19:59까지, 각 시간대별로 입양이 몇 건이나 발생했는지 조회하는 SQL문을 작성하시오
+
+## 나의 SQL 쿼리
+SELECT HOUR(DATETIME), COUNT(*) AS COUNT
+FROM ANIMAL_OUTS
+WHERE HOUR(DATETIME) >= 9
+AND HOUR(DATETIME) < 20
+GROUP BY HOUR(DATETIME)
+ORDER BY HOUR(DATETIME) ASC
