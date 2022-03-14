@@ -1,0 +1,12 @@
+## NULL 처리하기
+## 문제 url: https://programmers.co.kr/learn/courses/30/lessons/59410
+## 간략한 문제 요구사항
+
+## 동물 보호소에 들어온 모든 동물의 정보가 담긴 ANIMAL_INS 테이블
+## ANIMAL_INS 테이블에 동물의 생물 종, 이름, 성별 및 중성화 여부를 아이디 순으로 조회하는 SQL문을 작성하시오
+## 이때 이름이 없는 동물의 이름은 "No name"으로 표시하시오
+
+## 나의 SQL 쿼리
+SELECT ANIMAL_TYPE, IFNULL(NAME, 'No name') AS NAME, SEX_UPON_INTAKE
+FROM ANIMAL_INS
+ORDER BY ANIMAL_ID
